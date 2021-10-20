@@ -4,13 +4,14 @@ import img2pdf
 import glob
 import os
 
-# Change the current working directory
-# Indicate path where the PDF file is located.
-# Use / instead of \
-os.chdir('C:/Users/rral/Desktop/PP')
+# Indicate path where the PDF file is located. Use / instead of \ (Windows)
+path_pdfs = 'C:/Users/rral/Desktop/pdf2img2pdf/'
 
-# name = 'Protocolo FE_FA'
-name = 'Protocolo de Interpretacion Visual_FA'
+# Only the name of the PDF file, Without the extention .pdf
+name = 'name_of_pdf_file'
+
+# Change the current working directory
+os.chdir(path_pdfs)
 
 # File name to convert
 archivo = name + '.pdf'
