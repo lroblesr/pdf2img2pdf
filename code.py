@@ -5,13 +5,13 @@ import glob
 import os
 
 # Indicate path where the PDF file is located. Use / instead of \ (Windows)
-path_pdfs = 'C:/Users/rral/Desktop/pdf2img2pdf/'
+pdfs_path = 'C:/Users/rral/Desktop/pdf2img2pdf/'
 
 # Only the name of the PDF file, Without the extention .pdf
 name = 'name_of_pdf_file'
 
-# Change the current working directory
-os.chdir(path_pdfs)
+# Change the path to the working directory
+os.chdir(pdfs_path)
 
 # File name to convert
 archivo = name + '.pdf'
